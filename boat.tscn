@@ -107,7 +107,7 @@ script = ExtResource("1_mb40f")
 
 [node name="boat animation" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(579, 324)
+position = Vector2(580, 362)
 scale = Vector2(12.88889, 12)
 sprite_frames = SubResource("SpriteFrames_acoph")
 animation = &"boat"
