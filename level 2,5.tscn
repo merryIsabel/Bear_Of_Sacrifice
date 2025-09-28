@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=4 uid="uid://c0g8omr3bna5x"]
 
-[ext_resource type="Script" uid="uid://bjij1l1atqphc" path="res://Level2.gd" id="1_rf207"]
 [ext_resource type="Script" uid="uid://7wxhaac6hoa" path="res://player.gd" id="2_8tuy2"]
+[ext_resource type="PackedScene" uid="uid://c6vdv643olq7x" path="res://Block.tscn" id="3_bi6r4"]
 [ext_resource type="Texture2D" uid="uid://snx08or6enfd" path="res://pixil-frame-0-2.png" id="3_f610g"]
 [ext_resource type="Texture2D" uid="uid://dvxfqg4fpgcc" path="res://pixil-frame-0-22.png" id="4_6qbfu"]
 [ext_resource type="Texture2D" uid="uid://0ut352r2ejkl" path="res://pixil-frame-0-26.png" id="5_tpvcu"]
@@ -11,9 +11,6 @@
 [ext_resource type="Script" uid="uid://c6i8e7kajdsid" path="res://Goal2.5.gd" id="9_rf207"]
 [ext_resource type="Texture2D" uid="uid://dhfd3qtvfw68w" path="res://pixil-frame-0-23.png" id="10_yh0sv"]
 [ext_resource type="PackedScene" uid="uid://ji0mw6vplcsx" path="res://Enemy.tscn" id="11_js8wp"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kdubu"]
-size = Vector2(39, 52)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rf207"]
 texture = ExtResource("4_6qbfu")
@@ -70,23 +67,12 @@ tile_size = Vector2i(30, 30)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tpvcu")
 
-[node name="Node2D" type="Node2D"]
-script = ExtResource("1_rf207")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bv0oy"]
+size = Vector2(39, 52)
+
+[node name="Node2D" type="Node2D" groups=["player"]]
 
 [node name="Level 1" type="Node2D" parent="."]
-
-[node name="Player" type="CharacterBody2D" parent="Level 1" groups=["player"]]
-script = ExtResource("2_8tuy2")
-
-[node name="Sprite2D" type="Sprite2D" parent="Level 1/Player"]
-texture_filter = 1
-position = Vector2(218.00002, 169)
-scale = Vector2(1.833334, 1.8333331)
-texture = ExtResource("3_f610g")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Level 1/Player"]
-position = Vector2(217, 171)
-shape = SubResource("RectangleShape2D_kdubu")
 
 [node name="keski pala" type="TileMapLayer" parent="Level 1"]
 texture_filter = 1
@@ -97,19 +83,19 @@ tile_set = SubResource("TileSet_rj586")
 [node name="oikea sivu" type="TileMapLayer" parent="Level 1"]
 texture_filter = 1
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAAOAAkAAAAAAAAAAAAHAAoAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAOAAkAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_ir8iy")
 
 [node name="vasen sivu" type="TileMapLayer" parent="Level 1"]
 texture_filter = 1
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAAPAAkAAAAAAAAAAAAIAAoAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAPAAkAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_x0ka3")
 
 [node name="yksittäinen pala" type="TileMapLayer" parent="Level 1"]
 texture_filter = 1
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAATAAcAAAAAAAAAAAASAAgAAAAAAAAAAAAQAAgAAAAAAAAAAAAQAAYAAAAAAAAAAAALAAoAAAAAAAAAAAADAAoAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAATAAcAAAAAAAAAAAASAAgAAAAAAAAAAAAQAAgAAAAAAAAAAAAQAAYAAAAAAAAAAAALAAoAAAAAAAAAAAADAAoAAAAAAAAAAAAIAAkAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_nr8wp")
 
 [node name="Goal" parent="Level 1" instance=ExtResource("8_itqbq")]
@@ -122,6 +108,20 @@ texture_filter = 1
 position = Vector2(-944, -283)
 tile_map_data = PackedByteArray("AAAfAAkAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_hqns4")
+
+[node name="Player" type="CharacterBody2D" parent="Level 1" groups=["player"]]
+script = ExtResource("2_8tuy2")
+block_scene = ExtResource("3_bi6r4")
+
+[node name="Sprite2D" type="Sprite2D" parent="Level 1/Player"]
+texture_filter = 1
+position = Vector2(218.00002, 169)
+scale = Vector2(1.833334, 1.8333331)
+texture = ExtResource("3_f610g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level 1/Player"]
+position = Vector2(217, 171)
+shape = SubResource("RectangleShape2D_bv0oy")
 
 [node name="Enemy" parent="." groups=["player"] instance=ExtResource("11_js8wp")]
 position = Vector2(742, 571)

@@ -1,7 +1,8 @@
-[gd_scene load_steps=20 format=4 uid="uid://33rmbx5oylb6"]
+[gd_scene load_steps=21 format=4 uid="uid://33rmbx5oylb6"]
 
 [ext_resource type="Script" uid="uid://7wxhaac6hoa" path="res://player.gd" id="1_trn2v"]
 [ext_resource type="Texture2D" uid="uid://snx08or6enfd" path="res://pixil-frame-0-2.png" id="2_03owx"]
+[ext_resource type="PackedScene" uid="uid://c6vdv643olq7x" path="res://Block.tscn" id="2_wkp8b"]
 [ext_resource type="Texture2D" uid="uid://dvxfqg4fpgcc" path="res://pixil-frame-0-22.png" id="3_wkp8b"]
 [ext_resource type="Texture2D" uid="uid://0ut352r2ejkl" path="res://pixil-frame-0-26.png" id="4_20pc6"]
 [ext_resource type="Texture2D" uid="uid://dfb1mea2efeah" path="res://pixil-frame-0-25.png" id="5_5vvyt"]
@@ -71,6 +72,7 @@ sources/0 = SubResource("TileSetAtlasSource_ir8iy")
 
 [node name="Player" type="CharacterBody2D" parent="." groups=["player"]]
 script = ExtResource("1_trn2v")
+block_scene = ExtResource("2_wkp8b")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 texture_filter = 1
@@ -85,19 +87,19 @@ shape = SubResource("RectangleShape2D_kdubu")
 [node name="keski pala" type="TileMapLayer" parent="."]
 texture_filter = 1
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAADAAcAAAAAAAAAAAAEAAcAAAAAAAAAAAAFAAcAAAAAAAAAAAAGAAcAAAAAAAAAAAAHAAcAAAAAAAAAAAAIAAcAAAAAAAAAAAAJAAcAAAAAAAAAAAAKAAcAAAAAAAAAAAALAAYAAAAAAAAAAAALAAcAAAAAAAAAAAAMAAcAAAAAAAAAAAAMAAYAAAAAAAAAAAANAAYAAAAAAAAAAAANAAUAAAAAAAAAAAANAAcAAAAAAAAAAAAOAAcAAAAAAAAAAAAOAAYAAAAAAAAAAAAOAAUAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAADAAcAAAAAAAAAAAAJAAcAAAAAAAAAAAAKAAcAAAAAAAAAAAALAAYAAAAAAAAAAAALAAcAAAAAAAAAAAAMAAcAAAAAAAAAAAAMAAYAAAAAAAAAAAANAAYAAAAAAAAAAAANAAUAAAAAAAAAAAANAAcAAAAAAAAAAAAOAAcAAAAAAAAAAAAOAAYAAAAAAAAAAAAOAAUAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_rj586")
 
 [node name="oikea sivu" type="TileMapLayer" parent="."]
 texture_filter = 1
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAACAAcAAAAAAAAAAAAKAAYAAAAAAAAAAAAMAAUAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAACAAcAAAAAAAAAAAAKAAYAAAAAAAAAAAAMAAUAAAAAAAAAAAAIAAcAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_ir8iy")
 
 [node name="vasen sivu" type="TileMapLayer" parent="."]
 texture_filter = 1
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAAPAAcAAAAAAAAAAAAPAAYAAAAAAAAAAAAPAAUAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAPAAcAAAAAAAAAAAAPAAYAAAAAAAAAAAAPAAUAAAAAAAAAAAAEAAcAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_x0ka3")
 
 [node name="yksittäinen pala" type="TileMapLayer" parent="."]
@@ -115,3 +117,5 @@ texture_filter = 1
 position = Vector2(-945.5, -283.5)
 tile_map_data = PackedByteArray("AAAfAAkAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_hqns4")
+
+[connection signal="body_entered" from="Goal" to="Goal" method="_on_body_entered"]

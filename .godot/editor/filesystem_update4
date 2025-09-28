@@ -1,1 +1,19 @@
 res://boat.tscn
+res://Main.tscn
+res://Goal.gd
+res://player.gd
+res://Block.tscn
+res://Level2.tscn
+res://Goal2.gd
+res://Goal2.5.gd
+res://level 2,5.tscn
+res://level_3.tscn
+res://Enemy.gd
+res://MomDies.tscn
+res://mom_dies.gd
+res://colonialism.tscn
+res://animated_sprite_2d.gd
+res://ColonialismAnimation.gd
+res://moi.gd
+res://animated_sprite_2d.tscn
+res://moii.gd

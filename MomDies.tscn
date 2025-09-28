@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://dke8ybbbfi4ng"]
 
-[ext_resource type="Texture2D" uid="uid://dlkrsjyr88cd5" path="res://pixil-frame-0 (5).png" id="1_usi4t"]
-[ext_resource type="Script" uid="uid://bniclh2ngpb1f" path="res://MomDies.gd" id="2_tjwit"]
+[ext_resource type="Texture2D" uid="uid://b2pxi4bnu20o7" path="res://pixil-frame-0 (25).png" id="1_tjwit"]
+[ext_resource type="Script" uid="uid://cddjubqqev773" path="res://mom_dies.gd" id="2_oyyal"]
 
 [node name="Sprite2D" type="Sprite2D"]
 texture_filter = 1
-position = Vector2(580, 322)
+position = Vector2(577.99994, 323.99997)
 scale = Vector2(7.5, 7.5)
-texture = ExtResource("1_usi4t")
-script = ExtResource("2_tjwit")
+texture = ExtResource("1_tjwit")
+script = ExtResource("2_oyyal")

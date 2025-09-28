@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6vdv643olq7x"]
+
+[ext_resource type="Texture2D" uid="uid://cevajly2mwd2" path="res://pixil-frame-0 (26).png" id="1_2wby2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1m5vo"]
+size = Vector2(30, 30)
+
+[node name="Pibling" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2wby2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1m5vo")

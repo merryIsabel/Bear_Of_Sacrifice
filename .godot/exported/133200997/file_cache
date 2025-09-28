@@ -1,16 +1,20 @@
 res://boat.tscn::975b8a72519ea6eb9e4feacf094ffdc1::1759041938::res://.godot/exported/133200997/export-97bf380e72ce284bf4af1b233d09c55e-boat.scn
-res://colonialism.tscn::a55bba0de50e87a729017647874b44fd::1759031283::res://.godot/exported/133200997/export-f492bbfd57a1e5961c43213e26e5e335-colonialism.scn
+res://colonialism.tscn::d669a635dd1b10853b96882ff9fb3218::1759050241::res://.godot/exported/133200997/export-f492bbfd57a1e5961c43213e26e5e335-colonialism.scn
 res://End.tscn::55bb9074ff23d88bb2ae5994dc6b82d0::1759033925::res://.godot/exported/133200997/export-e29da93eb1a74702635796f544ee9780-End.scn
 res://EndOfEnd.tscn::ac90b63cde88bc3ceab55ac8044d3e3b::1759033791::res://.godot/exported/133200997/export-58fe349702fafd67b95ac8a211199d20-EndOfEnd.scn
 res://Enemy.tscn::dc35a698467a007abae9425fadc5aa51::1759030571::res://.godot/exported/133200997/export-c95b0eb5c5c309092e87826761594abf-Enemy.scn
 res://Goal.tscn::0b74daf88f95234df827cafedc6fbc24::1759030043::res://.godot/exported/133200997/export-0b7a851b1f210f5434bf151b5109f9ac-Goal.scn
 res://hug_animation.tscn::634c78972a217c1dc198a278b90f823d::1759034785::res://.godot/exported/133200997/export-da063006b1338393c89396243a8610a3-hug_animation.scn
-res://Level2.tscn::1953adaae4cbbfe9c07930d06864c0b9::1759028522::res://.godot/exported/133200997/export-1def63a061b408e26445f9a57484a3f6-Level2.scn
-res://level 2,5.tscn::9bfe60fe6f7fbd736c1b19e93b76f804::1759030571::res://.godot/exported/133200997/export-de056fdb221e8c5ec14b1f785f039b63-level 2,5.scn
-res://level_3.tscn::f6081a509d59edac92a63e0bf54c127e::1759041123::res://.godot/exported/133200997/export-78ee6155194928ba67dfe0fde84cf4d7-level_3.scn
+res://Level2.tscn::fc5e4cec28d49c4db82e5f08221bac31::1759049735::res://.godot/exported/133200997/export-1def63a061b408e26445f9a57484a3f6-Level2.scn
+res://level 2,5.tscn::51a4c1770245b7fe45dd63b8b27a8e5d::1759049768::res://.godot/exported/133200997/export-de056fdb221e8c5ec14b1f785f039b63-level 2,5.scn
+res://level_3.tscn::cf47b224635fd4ee4c0dfd7908d88192::1759051723::res://.godot/exported/133200997/export-78ee6155194928ba67dfe0fde84cf4d7-level_3.scn
 res://level_25.tscn::fc5f56fe904ec899971747271939e404::1759027991::res://.godot/exported/133200997/export-846287be0aa098c8fe61d250a3ea914f-level_25.scn
-res://Main.tscn::7992822b390ba38b8a01c911ff0b0702::1759029781::res://.godot/exported/133200997/export-bcb0d2eb5949c52b6a65bfe9de3e985b-Main.scn
-res://MomDies.tscn::874023edbaf92e9fd4d5ebccdbb61c8b::1759034886::res://.godot/exported/133200997/export-3a69a3b080ecd1ece680a24bf8ebcd48-MomDies.scn
+res://Main.tscn::0a2e76e9d2768ca72896b575d88b0266::1759051815::res://.godot/exported/133200997/export-bcb0d2eb5949c52b6a65bfe9de3e985b-Main.scn
+res://MomDies.tscn::4ad7ae967bf712bcc7bd0bd72b9d5dc0::1759050183::res://.godot/exported/133200997/export-3a69a3b080ecd1ece680a24bf8ebcd48-MomDies.scn
 res://new level.tscn::9a82ab0413e54e97749d85097bbd4f0a::1759040790::res://.godot/exported/133200997/export-8b3948920cc8c2863b6d4b3181aef568-new level.scn
 res://node_2d.tscn::d8308d1430c5cab464b2dbb21c41f0d8::1759014787::res://.godot/exported/133200997/export-362256a061aa8890e9a1e558b11e5ec3-node_2d.scn
 res://Sofian.tscn::4533eb4505ede31f24608c7869a8f69d::1759032443::res://.godot/exported/133200997/export-6e49f6f82b0bb56d190a4ec7ae24b0a2-Sofian.scn
+res://Pibling.tscn::3b7ed038201a87fb495225da74ab0cf6::1759043877::res://.godot/exported/133200997/export-e986bf988f3d20c9798798aa6660369a-Pibling.scn
+res://Block.tscn::77a7152cbb11e1bc3b072b04d2f6ee21::1759047283::res://.godot/exported/133200997/export-da39ce0d3c74ead630e95685bb2858d4-Block.scn
+res://animated_sprite_2d.tscn::02a6f54dc7c200cec49b4ca0502efebf::1759050990::res://.godot/exported/133200997/export-2ecf9ce70cf7fff525e4da110b9acd8f-animated_sprite_2d.scn
+res://moi.tscn::8d2d073d46205359c119df3fd2669406::1759050904::res://.godot/exported/133200997/export-658fe853c7d535af3d88fccad5800803-moi.scn
