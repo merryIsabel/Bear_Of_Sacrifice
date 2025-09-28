@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://uhkpmji2o8xb"]
+
+[ext_resource type="Script" uid="uid://kcqkeo7qq556" path="res://ColonialismAnimation.gd" id="1_7fwih"]
+[ext_resource type="Texture2D" uid="uid://boi5qaf6d145x" path="res://pixil-frame-0 (4).png" id="1_0735p"]
+[ext_resource type="Script" uid="uid://bkhjrjje52opi" path="res://colonialism.gd" id="3_7fwih"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_7fwih")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(308.50003, 330.74997)
+scale = Vector2(5.188889, 5.072222)
+texture = ExtResource("1_0735p")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 572.0
+offset_top = 38.0
+offset_right = 1098.0
+offset_bottom = 620.0
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_7fwih")
+
+[node name="StartButton" type="Button" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 755.0
+offset_top = 533.0
+offset_right = 945.0
+offset_bottom = 602.0
+grow_horizontal = 2
+text = "Next"
+autowrap_mode = 3
+
+[connection signal="pressed" from="StartButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
