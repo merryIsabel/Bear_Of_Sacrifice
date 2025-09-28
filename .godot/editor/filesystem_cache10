@@ -1,10 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1759041507
+::res://::1759041993
 Bears_Of_Sacrifice.apple-touch-icon.png::CompressedTexture2D::5205590767434241250::1759037075::1759041337::1::::<><><>0<>0<>5e3a77d7837d6b940f0a27ad1115f06e<>res://.godot/imported/Bears_Of_Sacrifice.apple-touch-icon.png-14f1b4563ae86c95cef42106bac3004c.ctex::
 Bears_Of_Sacrifice.icon.png::CompressedTexture2D::7235649600193287632::1759037075::1759041337::1::::<><><>0<>0<>d7327d00d356a3abf74a491dc20aceb4<>res://.godot/imported/Bears_Of_Sacrifice.icon.png-9f97b3efaade618d480524b2345ae2c7.ctex::
 Bears_Of_Sacrifice.png::CompressedTexture2D::1519760264087276395::1759037075::1759041337::1::::<><><>0<>0<>9aa93b4bed592168a44697a40f39a0fb<>res://.godot/imported/Bears_Of_Sacrifice.png-49a25fe87f00579f25628e74ed6d3f56.ctex::
 boat.gd::GDScript::5874992101083520886::1759020943::0::1::::<>Node2D<><>0<>0<><>::
-boat.tscn::PackedScene::2999761016257018775::1759020737::0::1::::<><><>0<>0<><>::uid://cpx5i5mjbuw7o::::res://boat.gd<>uid://cv5hni6klv0hu::::res://pixil-frame-0-21.png<>uid://bhcdbwi2ix4hv::::res://pixil-frame-0-20.png<>uid://d4k7vtevs87wf::::res://pixil-frame-0-19.png<>uid://dkcxnv1o38kc::::res://pixil-frame-0-18.png<>uid://dphv3cnt40r44::::res://pixil-frame-0-17.png<>uid://27eo7vyqeayd::::res://pixil-frame-0-16.png<>uid://crugw5p2q4eol::::res://pixil-frame-0-15.png<>uid://lrrwaft002hv::::res://pixil-frame-0-14.png<>uid://piognotryckf::::res://pixil-frame-0-4.png<>uid://dupiv142ig12b::::res://pixil-frame-0-5.png<>uid://jmmg32t5o01h::::res://pixil-frame-0-6.png<>uid://beawvmiy1xkyh::::res://pixil-frame-0-7.png<>uid://cfn1pwqcb1ojb::::res://pixil-frame-0-8.png<>uid://b1jsphwdg1pqe::::res://pixil-frame-0-9.png<>uid://bqyv81edjkuf8::::res://pixil-frame-0-10.png<>uid://c277x1cd2srf4::::res://pixil-frame-0-11.png<>uid://bxuprbl3h6qu7::::res://pixil-frame-0-12.png<>uid://bxqdjumrka7mm::::res://pixil-frame-0-13.png
+boat.tscn::PackedScene::2999761016257018775::1759041938::0::1::::<><><>0<>0<><>::uid://cpx5i5mjbuw7o::::res://boat.gd<>uid://cv5hni6klv0hu::::res://pixil-frame-0-21.png<>uid://bhcdbwi2ix4hv::::res://pixil-frame-0-20.png<>uid://d4k7vtevs87wf::::res://pixil-frame-0-19.png<>uid://dkcxnv1o38kc::::res://pixil-frame-0-18.png<>uid://dphv3cnt40r44::::res://pixil-frame-0-17.png<>uid://27eo7vyqeayd::::res://pixil-frame-0-16.png<>uid://crugw5p2q4eol::::res://pixil-frame-0-15.png<>uid://lrrwaft002hv::::res://pixil-frame-0-14.png<>uid://piognotryckf::::res://pixil-frame-0-4.png<>uid://dupiv142ig12b::::res://pixil-frame-0-5.png<>uid://jmmg32t5o01h::::res://pixil-frame-0-6.png<>uid://beawvmiy1xkyh::::res://pixil-frame-0-7.png<>uid://cfn1pwqcb1ojb::::res://pixil-frame-0-8.png<>uid://b1jsphwdg1pqe::::res://pixil-frame-0-9.png<>uid://bqyv81edjkuf8::::res://pixil-frame-0-10.png<>uid://c277x1cd2srf4::::res://pixil-frame-0-11.png<>uid://bxuprbl3h6qu7::::res://pixil-frame-0-12.png<>uid://bxqdjumrka7mm::::res://pixil-frame-0-13.png
 colonialism.gd::GDScript::3103337062619425462::1759026576::0::1::::<>Label<><>0<>0<><>::
 colonialism.tscn::PackedScene::1418862118458899315::1759031283::0::1::::<><><>0<>0<><>::uid://kcqkeo7qq556::::res://ColonialismAnimation.gd<>uid://boi5qaf6d145x::::res://pixil-frame-0 (4).png<>uid://bkhjrjje52opi::::res://colonialism.gd
 ColonialismAnimation.gd::GDScript::707006754908397715::1759036144::0::1::::<>Node2D<><>0<>0<><>::
@@ -16,7 +16,7 @@ EndOfEndLabel.gd::GDScript::3074690070261197756::1759033735::0::1::::<>Label<><>
 EndText.gd::GDScript::5798051903249478307::1759033841::0::1::::<>Label<><>0<>0<><>::
 Enemy.gd::GDScript::7721594964197259229::1759026303::0::1::::<>Area2D<><>0<>0<><>::
 Enemy.tscn::PackedScene::649755173498054315::1759030571::0::1::::<><><>0<>0<><>::uid://diansnkmpoytx::::res://Enemy.gd<>uid://co4ilp6wk5rgb::::res://pixil-frame-0 (10).png
-export_presets.cfg::TextFile::-1::1759041507::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1759041993::0::1::::<><><>0<>0<><>::
 Goal2.5.gd::GDScript::6967223042342011907::1759029889::0::1::::<>Area2D<><>0<>0<><>::
 Goal2.gd::GDScript::4993867869891641428::1759028611::0::1::::<>Area2D<><>0<>0<><>::
 Goal3.gd::GDScript::720231285442916804::1759032079::0::1::::<>Area2D<><>0<>0<><>::
@@ -86,7 +86,7 @@ pixil-frame-0-33.png::CompressedTexture2D::7002465001476822193::1759009140::1759
 pixil-frame-0-34.png::CompressedTexture2D::1951840694453529318::1759009140::1759041337::1::::<><><>0<>0<>6a826ca7bb7f422fdd03aa15675b303a<>res://.godot/imported/pixil-frame-0-34.png-11ca1b25b272f4747e50d48600a5628d.ctex::
 player.gd::GDScript::67437302897938320::1759014787::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Sofian.tscn::PackedScene::4649112296074879271::1759032443::0::1::::<><><>0<>0<><>::uid://7wxhaac6hoa::::res://player.gd<>uid://snx08or6enfd::::res://pixil-frame-0-2.png<>uid://dvxfqg4fpgcc::::res://pixil-frame-0-22.png<>uid://0ut352r2ejkl::::res://pixil-frame-0-26.png<>uid://dfb1mea2efeah::::res://pixil-frame-0-25.png<>uid://bgj53t2cwmpm7::::res://pixil-frame-0-27.png<>uid://bb7h7qkdp66g8::::res://Goal.tscn<>uid://c6i8e7kajdsid::::res://Goal2.5.gd<>uid://dhfd3qtvfw68w::::res://pixil-frame-0-23.png
-::res://export/::1759041513
-index.apple-touch-icon.png::CompressedTexture2D::1413304860700700285::1759041506::1759041521::1::::<><><>0<>0<>18c76b9a94e9f534e8db0d7af0baffa0<>res://.godot/imported/index.apple-touch-icon.png-2786902287ee3c081d87ddba9fd253fe.ctex::
-index.icon.png::CompressedTexture2D::6680839046381105856::1759041506::1759041521::1::::<><><>0<>0<>0869d3e10d1790d1171c482d52ebd725<>res://.godot/imported/index.icon.png-3b121a4922cb9cfa20e3529a349a6f72.ctex::
-index.png::CompressedTexture2D::2973559825817458929::1759041506::1759041521::1::::<><><>0<>0<>b2b1c2450e96ce0df9ec1a44dda987d4<>res://.godot/imported/index.png-de14850a4c2320eaddca8799ea52db2b.ctex::
+::res://export/::1759042025
+index.apple-touch-icon.png::CompressedTexture2D::681032158267926829::1759041993::1759042264::1::::<><><>0<>0<>3bcc59afc7b3c5e66ad911d4d9f602a2<>res://.godot/imported/index.apple-touch-icon.png-2786902287ee3c081d87ddba9fd253fe.ctex::
+index.icon.png::CompressedTexture2D::692759072443309990::1759041993::1759042264::1::::<><><>0<>0<>f6fa27010f89f86d02691bf5edec6845<>res://.godot/imported/index.icon.png-3b121a4922cb9cfa20e3529a349a6f72.ctex::
+index.png::CompressedTexture2D::3279248627219463348::1759041993::1759042264::1::::<><><>0<>0<>f892b300dacab2b737b1865e88665240<>res://.godot/imported/index.png-de14850a4c2320eaddca8799ea52db2b.ctex::
