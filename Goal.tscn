@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb7h7qkdp66g8"]
+
+[ext_resource type="Script" uid="uid://bo0jtwywge1po" path="res://Goal.gd" id="1_py4ba"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sep42"]
+size = Vector2(34, 32)
+
+[node name="Goal" type="Area2D"]
+script = ExtResource("1_py4ba")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(76, 50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_sep42")
+
+[connection signal="level_complete" from="." to="." method="_on_goal_level_complete"]

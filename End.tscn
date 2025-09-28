@@ -1,0 +1,117 @@
+[gd_scene load_steps=14 format=3 uid="uid://h2h21f0hsglk"]
+
+[ext_resource type="Texture2D" uid="uid://x2v24gwdq073" path="res://pixil-frame-0 (14).png" id="1_tyei3"]
+[ext_resource type="Script" uid="uid://mvsgmhjs4snv" path="res://End.gd" id="1_vf25b"]
+[ext_resource type="Texture2D" uid="uid://cgt3tfjnvthbo" path="res://pixil-frame-0 (15).png" id="2_fw8k1"]
+[ext_resource type="Texture2D" uid="uid://ckebsgbmkxldk" path="res://pixil-frame-0 (16).png" id="3_vf25b"]
+[ext_resource type="Texture2D" uid="uid://bbrueiw3jtb36" path="res://pixil-frame-0 (17).png" id="4_5wgnk"]
+[ext_resource type="Texture2D" uid="uid://7dcgkq0bo43c" path="res://pixil-frame-0 (18).png" id="5_ydmae"]
+[ext_resource type="Texture2D" uid="uid://ca07opmaokniv" path="res://pixil-frame-0 (19).png" id="6_2pbrh"]
+[ext_resource type="Texture2D" uid="uid://b8oc5kqqy6icb" path="res://pixil-frame-0 (20).png" id="7_pe1eg"]
+[ext_resource type="Texture2D" uid="uid://dct5hmnm6wxyx" path="res://pixil-frame-0 (21).png" id="8_t6rgl"]
+[ext_resource type="Texture2D" uid="uid://b5n3sevrq7lf8" path="res://pixil-frame-0 (22).png" id="9_eeld2"]
+[ext_resource type="Texture2D" uid="uid://bohxhwrp8hwmp" path="res://pixil-frame-0 (24).png" id="10_bu0hh"]
+[ext_resource type="Script" uid="uid://couvckkqd5snb" path="res://EndText.gd" id="11_fw8k1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4fp6e"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tyei3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fw8k1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vf25b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5wgnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ydmae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2pbrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pe1eg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_t6rgl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_eeld2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_eeld2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bu0hh")
+}],
+"loop": true,
+"name": &"end animation",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_vf25b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(578, 326)
+scale = Vector2(7, 7)
+sprite_frames = SubResource("SpriteFrames_4fp6e")
+animation = &"end animation"
+autoplay = "end animation"
+frame_progress = 0.26826158
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 41.0
+offset_top = 43.0
+offset_right = 355.0
+offset_bottom = 617.0
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("11_fw8k1")

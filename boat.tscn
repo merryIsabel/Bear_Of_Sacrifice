@@ -1,0 +1,116 @@
+[gd_scene load_steps=21 format=3 uid="uid://bi0dvjjht1jj8"]
+
+[ext_resource type="Script" uid="uid://cpx5i5mjbuw7o" path="res://boat.gd" id="1_mb40f"]
+[ext_resource type="Texture2D" uid="uid://cv5hni6klv0hu" path="res://pixil-frame-0-21.png" id="1_xtild"]
+[ext_resource type="Texture2D" uid="uid://bhcdbwi2ix4hv" path="res://pixil-frame-0-20.png" id="2_mb40f"]
+[ext_resource type="Texture2D" uid="uid://d4k7vtevs87wf" path="res://pixil-frame-0-19.png" id="3_iqbep"]
+[ext_resource type="Texture2D" uid="uid://dkcxnv1o38kc" path="res://pixil-frame-0-18.png" id="4_v5m18"]
+[ext_resource type="Texture2D" uid="uid://dphv3cnt40r44" path="res://pixil-frame-0-17.png" id="5_4qsw4"]
+[ext_resource type="Texture2D" uid="uid://27eo7vyqeayd" path="res://pixil-frame-0-16.png" id="6_5v0p8"]
+[ext_resource type="Texture2D" uid="uid://crugw5p2q4eol" path="res://pixil-frame-0-15.png" id="7_ban67"]
+[ext_resource type="Texture2D" uid="uid://lrrwaft002hv" path="res://pixil-frame-0-14.png" id="8_j0up5"]
+[ext_resource type="Texture2D" uid="uid://piognotryckf" path="res://pixil-frame-0-4.png" id="9_od8qx"]
+[ext_resource type="Texture2D" uid="uid://dupiv142ig12b" path="res://pixil-frame-0-5.png" id="10_bo5st"]
+[ext_resource type="Texture2D" uid="uid://jmmg32t5o01h" path="res://pixil-frame-0-6.png" id="11_tehh8"]
+[ext_resource type="Texture2D" uid="uid://beawvmiy1xkyh" path="res://pixil-frame-0-7.png" id="12_25jot"]
+[ext_resource type="Texture2D" uid="uid://cfn1pwqcb1ojb" path="res://pixil-frame-0-8.png" id="13_s72v5"]
+[ext_resource type="Texture2D" uid="uid://b1jsphwdg1pqe" path="res://pixil-frame-0-9.png" id="14_pth0m"]
+[ext_resource type="Texture2D" uid="uid://bqyv81edjkuf8" path="res://pixil-frame-0-10.png" id="15_bs5a4"]
+[ext_resource type="Texture2D" uid="uid://c277x1cd2srf4" path="res://pixil-frame-0-11.png" id="16_gudqt"]
+[ext_resource type="Texture2D" uid="uid://bxuprbl3h6qu7" path="res://pixil-frame-0-12.png" id="17_mxhld"]
+[ext_resource type="Texture2D" uid="uid://bxqdjumrka7mm" path="res://pixil-frame-0-13.png" id="18_tpb13"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_acoph"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xtild")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mb40f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_iqbep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_v5m18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4qsw4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5v0p8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ban67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_j0up5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_od8qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bo5st")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_tehh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_25jot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_s72v5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_pth0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_bs5a4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gudqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mxhld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tpb13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tpb13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tpb13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tpb13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tpb13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tpb13")
+}],
+"loop": true,
+"name": &"boat",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_mb40f")
+
+[node name="boat animation" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(579, 324)
+scale = Vector2(12.88889, 12)
+sprite_frames = SubResource("SpriteFrames_acoph")
+animation = &"boat"
+autoplay = "boat"
+frame = 4
+frame_progress = 0.8360922

@@ -1,0 +1,117 @@
+[gd_scene load_steps=20 format=4 uid="uid://di3ctt8d4hmlc"]
+
+[ext_resource type="Script" uid="uid://7wxhaac6hoa" path="res://player.gd" id="1_edab0"]
+[ext_resource type="Texture2D" uid="uid://snx08or6enfd" path="res://pixil-frame-0-2.png" id="2_7ewyv"]
+[ext_resource type="Texture2D" uid="uid://dvxfqg4fpgcc" path="res://pixil-frame-0-22.png" id="3_c6fja"]
+[ext_resource type="Texture2D" uid="uid://0ut352r2ejkl" path="res://pixil-frame-0-26.png" id="4_4t52j"]
+[ext_resource type="Texture2D" uid="uid://dfb1mea2efeah" path="res://pixil-frame-0-25.png" id="5_22d7j"]
+[ext_resource type="Texture2D" uid="uid://bgj53t2cwmpm7" path="res://pixil-frame-0-27.png" id="6_lx074"]
+[ext_resource type="PackedScene" uid="uid://bb7h7qkdp66g8" path="res://Goal.tscn" id="7_7qh8s"]
+[ext_resource type="Script" uid="uid://ki5dsjl6qqk7" path="res://Goal3.gd" id="8_shppy"]
+[ext_resource type="Texture2D" uid="uid://0t3uf3kviv8y" path="res://pixil-frame-0 (7).png" id="9_batqt"]
+[ext_resource type="Texture2D" uid="uid://dhfd3qtvfw68w" path="res://pixil-frame-0-23.png" id="10_mklgk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_344tx"]
+size = Vector2(39, 52)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_872ww"]
+texture = ExtResource("3_c6fja")
+texture_region_size = Vector2i(30, 30)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15, -15, 15, -15, 15, 15, -15, 15)
+
+[sub_resource type="TileSet" id="TileSet_x0f6r"]
+tile_size = Vector2i(30, 30)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_872ww")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k8vp2"]
+texture = ExtResource("4_4t52j")
+texture_region_size = Vector2i(30, 30)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15, -15, 15, -15, 15, 15, -15, 15)
+
+[sub_resource type="TileSet" id="TileSet_nylt8"]
+tile_size = Vector2i(30, 30)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_k8vp2")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gbq2k"]
+texture = ExtResource("5_22d7j")
+texture_region_size = Vector2i(30, 30)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15, -15, 15, -15, 15, 15, -15, 15)
+
+[sub_resource type="TileSet" id="TileSet_0bse2"]
+tile_size = Vector2i(30, 30)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_gbq2k")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qj485"]
+texture = ExtResource("6_lx074")
+texture_region_size = Vector2i(30, 30)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15, -15, 15, -15, 15, 15, -15, 15)
+
+[sub_resource type="TileSet" id="TileSet_laa4x"]
+tile_size = Vector2i(30, 30)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_qj485")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Level 1" type="Node2D" parent="."]
+
+[node name="Player" type="CharacterBody2D" parent="Level 1" groups=["player"]]
+script = ExtResource("1_edab0")
+
+[node name="Sprite2D" type="Sprite2D" parent="Level 1/Player"]
+texture_filter = 1
+position = Vector2(218.00002, 169)
+scale = Vector2(1.833334, 1.8333331)
+texture = ExtResource("2_7ewyv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level 1/Player"]
+position = Vector2(217, 171)
+shape = SubResource("RectangleShape2D_344tx")
+
+[node name="keski pala" type="TileMapLayer" parent="Level 1"]
+texture_filter = 1
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray("AAACAAkAAAAAAAAAAAAGAAkAAAAAAAAAAAAHAAkAAAAAAAAAAAAIAAkAAAAAAAAAAAAJAAkAAAAAAAAAAAAKAAkAAAAAAAAAAAAGAAEAAAAAAAAAAAAHAAEAAAAAAAAAAAAIAAEAAAAAAAAAAAAKAAEAAAAAAAAAAAAJAAEAAAAAAAAAAAALAAEAAAAAAAAAAAAMAAEAAAAAAAAAAAAOAAEAAAAAAAAAAAANAAEAAAAAAAAAAAAPAAEAAAAAAAAAAAAQAAEAAAAAAAAAAAALAAkAAAAAAAAAAAAMAAkAAAAAAAAAAAANAAkAAAAAAAAAAAAOAAkAAAAAAAAAAAAPAAkAAAAAAAAAAAAQAAkAAAAAAAAAAAARAAkAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_x0f6r")
+
+[node name="oikea sivu" type="TileMapLayer" parent="Level 1"]
+texture_filter = 1
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray("AAARAAYAAAAAAAAAAAAFAAEAAAAAAAAAAAABAAkAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_nylt8")
+
+[node name="vasen sivu" type="TileMapLayer" parent="Level 1"]
+texture_filter = 1
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray("AAASAAkAAAAAAAAAAAARAAEAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_0bse2")
+
+[node name="yksittäinen pala" type="TileMapLayer" parent="Level 1"]
+texture_filter = 1
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray("AAABAAgAAAAAAAAAAAABAAcAAAAAAAAAAAABAAYAAAAAAAAAAAABAAUAAAAAAAAAAAABAAQAAAAAAAAAAAABAAMAAAAAAAAAAAABAAIAAAAAAAAAAAABAAEAAAAAAAAAAAARAAYAAAAAAAAAAAARAAUAAAAAAAAAAAARAAQAAAAAAAAAAAARAAMAAAAAAAAAAAARAAIAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_laa4x")
+
+[node name="Goal" parent="Level 1" instance=ExtResource("7_7qh8s")]
+position = Vector2(1039, 503)
+scale = Vector2(2, 2)
+script = ExtResource("8_shppy")
+
+[node name="PixilFrame0(7)" type="Sprite2D" parent="Level 1/Goal"]
+visible = false
+position = Vector2(-16, -8)
+scale = Vector2(0.66123694, 0.6864584)
+texture = ExtResource("9_batqt")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Level 1/Goal"]
+texture_filter = 1
+position = Vector2(1, 4)
+scale = Vector2(1, 1.038)
+texture = ExtResource("10_mklgk")
